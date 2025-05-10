@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.2",
+    "multer": "^1.4.5-lts.2",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10"
+  },
+  "name": "blog_webapp",
+  "version": "1.0.0",
+  "description": "\"blog webapp using MERN stack\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"https://github.com/Tejas0525/Blog_webApp.git\""
+  },
+  "author": "\"Tejas Patil, Soham Ghosh, Yash Rathod\"",
+  "license": "ISC"
+}
