@@ -175,7 +175,7 @@ app.put('/post',uploadMiddleware.single('file'), async (request,response)=>{
 
 app.listen(8000, () => {
     try {
-        console.log('server is running on URL http://localhost:7077');
+        console.log('server is running on URL http://localhost:8000');
     }
     catch (error) {
         console.log("Error in Connection...!");
