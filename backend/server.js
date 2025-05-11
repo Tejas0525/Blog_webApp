@@ -9,6 +9,7 @@ const multer = require('multer');
 const fs = require('fs');
 const User = require('./models/User');
 const Post = require('./models/Post');
+const { info } = require("console");
 const uploadMiddleware = multer({dest:'uploads/'});
 
 const app = express();
@@ -112,14 +113,13 @@ app.post('/post', uploadMiddleware.single('file'), async (request, response) => 
         fs.renameSync(path, newPath);
 
     const {title,summary,content} = request.body;
-    await postDoc = Post.create({
+    const postDoc = await Post.create({
         title,
         summary,
         content,
         cover:newPath,
-        author:
+        author:info.id
     });
-
     response.json(postDoc);
     }
     catch(error){
